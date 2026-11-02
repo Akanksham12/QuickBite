@@ -1,0 +1,369 @@
+
+/* Global Styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+a{
+    color: #ff6b81;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+}
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #eb2632;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #ff0000;
+}
+.btn-primary2{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary2:hover{
+    color: white;
+    background-color: darkgreen;
+}
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+.error{
+    padding: 2%;
+    color: red;
+}
+.success{
+    padding: 2%;
+    color: green;
+}
+
+/* Navbar */
+.logo{
+    width: 10%;
+    float: left;
+    margin-left: 10%;
+}
+.menu {
+    padding: 10px 0;
+    background-color: black;
+}
+.menu ul {
+    margin-left: 35%;
+    list-style-type: none;
+    text-align: center;
+}
+.menu ul li {
+    font-size: 20px;
+    display: inline;
+    padding: 1%;
+    position: relative;
+}
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    transition: color 0.3s;
+}
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #0096c7;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+}
+.menu ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #0096c7;
+}
+.menu ul li a:hover {
+    color: #0096c7;
+}
+
+/* Food Search */
+.food-search {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+.food-search input[type="search"] {
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Categories */
+.categories {
+    padding: 4% 0;
+    background-color: #f7f7ff;
+    min-height: 50vh;
+}
+.box-3 {
+    width: 28%;
+    margin: 2%;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.3s ease-in-out;
+}
+.box-3:hover img {
+    transform: scale(1.1);
+}
+
+/* Food Menu */
+.food-menu {
+    background-color: #e0e0e0;
+    padding: 4% 0;
+}
+.food-menu-box {
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    height: 150px; /* Maintain the height */
+}
+.food-menu-img {
+    width: 20%;
+}
+.food-menu-desc {
+    width: 75%;
+    padding-left: 5%;
+    margin:1%;
+}
+.food-price {
+    font-size: 1.2rem;
+    margin: 0px;
+}
+.food-detail {
+    font-size: 1rem;
+    color: #747d8c;
+    margin:0px;
+}
+
+/* Order Section */
+.order {
+    width: 50%;
+    margin: 0 auto;
+}
+/* Ensure table is scrollable on smaller screens */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tbl_full {
+    border-radius: 5px;
+    font-size: 14px; /* Adjusted table font size */
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    
+}
+
+.tbl_full td,
+.tbl_full th {
+    text-align: center;
+    padding: 12px; /* Increased padding for better spacing */
+}
+
+.tbl_full tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.tbl_full tr:nth-child(odd) {
+    background: #f0f0f0;
+}
+.input-responsive {
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label {
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+/* Social */
+.social ul {
+    list-style-type: none;
+    text-align: center;
+}
+.social ul li {
+    display: inline;
+    padding: 1%;
+}
+.nav-container {
+    margin: 0 auto;
+    padding: 1%;
+    background-color: black;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.footer {
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Float Container */
+.float-container {
+    position: relative;
+}
+.float-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around text */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: bold; /* Bold text for better readability */
+    text-align: center; /* Center align text */
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+    .menu ul {
+        text-align: center;
+    }
+    .food-search input[type="search"] {
+        width: 70%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+    .btn {
+        width: 20%;
+        padding: 2%;
+    }
+    .food-search {
+        padding: 10% 0;
+    }
+    .categories {
+        padding: 20% 0;
+    }
+    h2 {
+        margin-bottom: 10%;
+    }
+    .box-3 {
+        width: 100%;
+        margin: 4% auto;
+    }
+    .food-menu {
+        padding: 20% 0;
+    }
+    .food-menu-box {
+        width: 90%;
+        
+        margin-bottom: 5%;
+        height: auto;
+        flex-direction: row;
+    }
+    
+    .food-menu-img {
+        width: 40%; /* Adjust width based on your design */
+        padding-right:5%;
+
+   
+    }
+
+    .food-menu-desc {
+        width: 100%;
+        margin-top: 0px;
+        padding-left: 0; /* Remove padding for mobile */
+    }
+    .food-detail {
+        display: none; /* Hide description on mobile */
+    }
+    .social {
+        padding: 5% 0;
+    }
+    .order {
+        width: 100%;
+    }
+      /* Ensure table and container are responsive */
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 1.5rem;
+    }
+
+    .table-responsive table {
+        width: 100%;
+        min-width: 600px; /* Minimum width for table to prevent shrinking too much */
+    }
+}

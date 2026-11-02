@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    
+    color: #333;
+    font-size: 16px; /* Increased base font size for better readability */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tbl_full {
+    border-radius: 5px;
+    font-size: 14px; /* Adjusted table font size */
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    
+}
+/* Ensure table is scrollable on smaller screens */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tbl_full td,
+.tbl_full th {
+    text-align: center;
+    padding: 12px; /* Increased padding for better spacing */
+}
+
+.tbl_full tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.tbl_full tr:nth-child(odd) {
+    background: #f0f0f0;
+}
+.menu {
+    padding: 10px 0;
+    background-color:black;   
+}
+
+.menu ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu ul li {
+    font-size: 20px; /* Increased menu item font size */
+    display: inline;
+    padding: 1%;
+    position: relative; /* Added for underline effect */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    position: relative; /* Added for underline effect */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #0096c7;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #0096c7;
+}
+
+.menu ul li a:hover {
+    color: #0096c7;
+}
+
+.main-content {
+    
+    background-color: #f7f7ff;
+    padding: 3% 0;
+    border-radius: 10px;
+    flex: 1; /* Ensure main-content takes up remaining space */
+}
+
+.heading {
+    font-size: 28px; /* Increased heading font size */
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.col-4 {
+    width: 22%;
+    background-color: white;
+    margin: 1.5%;
+    padding: 2%;
+    float: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.col-4:hover {
+    transform: translateY(-10px);
+}
+
+.count {
+    font-size: 42px; /* Increased count font size */
+    color: #3498db;
+}
+
+.description {
+    font-size: 18px; /* Increased description font size */
+    color: #777;
+}
+
+.alert {
+    padding: 12px; 
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.success {
+    color: #2ed573;
+}
+
+.error {
+    color: #ff4757;
+}
+
+.btn_primary,
+.btn_secondary,
+.btn_danger {
+    display: inline-block;
+    padding: 8px 15px; /* Increased button padding */
+    border-radius: 3px;
+    margin:2px 2px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.btn_primary {
+    background-color: #3498db;
+}
+
+.btn_primary:hover {
+    background-color: #2980b9;
+}
+
+.btn_secondary {
+    background-color: green;
+}
+
+.btn_secondary:hover {
+    background-color: darkgreen;
+}
+
+.btn_danger {
+    background-color: #e74c3c;
+}
+
+.btn_danger:hover {
+    background-color: #c0392b;
+}
+
+.login {
+    background-color: #fff;
+    width: 300px;
+    border: 2px solid #e6e6e6;
+    margin: 10% auto;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.social ul li {
+    display: inline;
+    padding: 1%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    
+}
+
+
+
+.wrapper {
+    padding: 1%;
+    width: 100%;
+   flex:1; 
+    
+}
